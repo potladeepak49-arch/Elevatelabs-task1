@@ -1,0 +1,153 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #5fa8d3, #20c4cb);
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .container {
+    align-items: center;
+}
+
+/* LOGO FONT (Changed as requested) */
+.logo {
+    font-family: "Monsieur La Doulaise", cursive;
+    font-size: 38px;
+    color: #1f2937;
+}
+.logo:hover {
+    color: white;
+    transition: 0.3s ease;
+}
+
+
+
+/* NAVIGATION */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2d2d2d;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+.btn {
+    padding: 14px 30px;
+    background: #e5e7eb;
+    color: #2563eb;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* FEATURES */
+.features {
+    background: #f8fafc;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
+    background: white;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+.footer {
+    background: #111;
+    color: #aaa;
+    padding: 20px;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h2 {
+        font-size: 30px;
+    }
+}
